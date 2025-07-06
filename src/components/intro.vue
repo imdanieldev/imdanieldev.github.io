@@ -35,7 +35,7 @@ export default {
                     class: "grid justify-around grid-cols-1 w-full sm:grid-cols-2",
                },
                title: {
-                    text: "Hi I'm Daniel",
+                    text: "Hi I'm Danial Nasr",
                     class: "text-center text-3xl break-words",
                },
                div: {
