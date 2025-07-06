@@ -47,7 +47,7 @@ export default {
                          "grid grid-cols-1 mt-8 w-full justify-around text-center sm:grid-cols-2",
                },
                email: {
-                    link: "mailto: imdanieldev@outlook.com",
+                    link: "https://t.me/D6NTR",
                     text: "Contact Me",
                     class:
                          "cursor-pointer font-medium text-gradient break-words text-center mt-2 sm:mt-1",
