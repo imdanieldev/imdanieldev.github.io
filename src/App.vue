@@ -155,7 +155,7 @@ onMounted(() => {
                scrub: true,
           }
      });;
-     smoother.effects(boxanimate.value, { speed: 0.5, lag: 5 });
+     smoother.effects(boxanimate.value, { speed: 0.7, lag: 5 });
 });
 
 </script>
