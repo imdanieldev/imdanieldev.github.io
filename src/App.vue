@@ -62,7 +62,7 @@
                </div>
           </section>
           <section id="items"
-               class="my-box-shadow min-h-svh w-full overflow-hidden relative bg-white/5 px-2 py-4 border-t-2 border-solid border-white z-10">
+               class="my-box-shadow min-h-svh w-full overflow-hidden relative bg-transparent px-2 py-4 border-t-2 border-solid border-white z-10">
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div class="flex justify-around px-2 items-center w-full gap-10 flex-col lg:flex-row">
                          <div
