@@ -1,20 +1,6 @@
 <template>
      <div
           class="selection:bg-slate-900 montserrat-400 flex-col selection:text-white min-h-svh bg-transparent text-white w-full relative flex justify-center items-center">
-          <div class="bg z-0">
-               <div class="lines">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-               </div>
-          </div>
           <section
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
                <div ref="animateBox"
@@ -62,11 +48,17 @@
                </div>
           </section>
           <section id="items"
-               class="my-box-shadow min-h-svh w-full overflow-hidden relative bg-transparent px-2 py-4 border-t-2 border-solid border-white z-10">
+               class="my-box-shadow min-h-svh w-full overflow-hidden relative starsbg px-2 py-4 border-t-2 border-solid border-white z-10">
+               <div class="stars"></div>
+               <div class="shooting-star"></div>
+               <div class="shooting-star"></div>
+               <div class="shooting-star"></div>
+               <div class="shooting-star"></div>
+               <div class="shooting-star"></div>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div class="flex justify-around px-2 items-center w-full gap-10 flex-col lg:flex-row">
                          <div
-                              class="border-gradient3 relative bg-white/5 backdrop-blur mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:translate-y-6 transition-transform duration-700 hover:-translate-y-3 lg:hover:translate-y-3">
+                              class="border-gradient3 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:translate-y-9 transition-transform duration-700 hover:-translate-y-3 lg:hover:translate-y-6">
                               <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center">Basic Plan</h3>
                               <p class="text-center">In this plan, we provide you with a static site using Vanilla JS
                                    and
@@ -76,7 +68,7 @@
                                    using Zola, which is an SSG.</p>
                          </div>
                          <div
-                              class="border-gradient2 relative bg-white/5 backdrop-blur mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 transition-transform duration-700 hover:-translate-y-3">
+                              class="border-gradient2 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 transition-transform duration-700 hover:-translate-y-3">
                               <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center">Standard Plan</h3>
                               <p class="text-center">In this plan, we design a site for you using WordPress and valid
                                    plugins
@@ -89,7 +81,7 @@
                                    the responsibility of the customer.</p>
                          </div>
                          <div
-                              class="border-gradient1 relative bg-white/5 backdrop-blur mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:-translate-y-6 transition-transform duration-700 hover:-translate-y-3 lg:hover:-translate-y-9">
+                              class="border-gradient1 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:-translate-y-9 transition-transform duration-700 hover:-translate-y-3 lg:hover:-translate-y-12">
                               <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center">Essential Plan</h3>
                               <p class="text-center">In this plan, a site is designed for you with PHP and VueJS, and
                                    the
@@ -341,110 +333,76 @@ onMounted(() => {
      font-style: normal;
 }
 
-.bg {
-     display: table;
-     width: 100%;
-     height: 100%;
-     background-color: #111111;
-     line-height: 1.6;
-     position: fixed;
-     overflow: hidden;
-     top: 0;
-     left: 0;
+.starsbg {
+     background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
 }
 
-.lines {
+.stars {
+     width: 1px;
+     height: 1px;
      position: absolute;
-     top: 0;
-     left: 0;
-     right: 0;
-     height: 100%;
-     margin: auto;
-     width: 90vw;
-     display: flex;
-     justify-content: space-between;
+     background: white;
+     box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white, 22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white, 38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white, 53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white, 68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white, 83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white, 98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white, 18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white, 35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white, 50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white, 65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white, 80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white, 95vw 75vh 2px white;
+     animation: twinkle 8s infinite linear;
 }
 
-.line {
-     position: relative;
-     width: 3px;
-     height: 100%;
-     background: transparent;
-     overflow: hidden;
-}
-
-.line::after {
-     content: '';
-     display: block;
+.shooting-star {
      position: absolute;
-     height: 15vh;
-     width: 100%;
-     top: -50%;
-     left: 0;
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-     animation: drop 5s 0s infinite;
-     animation-fill-mode: forwards;
-     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+     width: 30px;
+     height: 1px;
+     background: linear-gradient(90deg, white, transparent);
+     animation: shoot 4s infinite cubic-bezier(0.95, 0.05, 0.8, 0.85);
 }
 
-/* Different colors for each line's pseudo-element */
-.line:nth-child(1)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF4500 75%, #FF4500 100%);
-     animation-delay: 1s;
+.shooting-star:nth-child(1) {
+     top: 20%;
+     left: -100px;
+     animation-delay: 0s;
 }
 
-.line:nth-child(2)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #32CD32 75%, #32CD32 100%);
+.shooting-star:nth-child(2) {
+     top: 35%;
+     left: -100px;
      animation-delay: 2s;
 }
 
-.line:nth-child(3)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #1E90FF 75%, #1E90FF 100%);
-     animation-delay: 3s;
-}
-
-.line:nth-child(4)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFD700 75%, #FFD700 100%);
+.shooting-star:nth-child(3) {
+     top: 50%;
+     left: -100px;
      animation-delay: 4s;
 }
 
-.line:nth-child(5)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #8A2BE2 75%, #8A2BE2 100%);
-     animation-delay: 5s;
+@keyframes twinkle {
+
+     0%,
+     100% {
+          opacity: 0.8;
+     }
+
+     50% {
+          opacity: 0.4;
+     }
 }
 
-.line:nth-child(6)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #20B2AA 75%, #20B2AA 100%);
-     animation-delay: 6.5s;
-}
-
-.line:nth-child(7)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #DC143C 75%, #DC143C 100%);
-     animation-delay: 7.5s;
-}
-
-.line:nth-child(8)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00FA9A 75%, #00FA9A 100%);
-     animation-delay: 8.5s;
-}
-
-.line:nth-child(9)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF1493 75%, #FF1493 100%);
-     animation-delay: 9.5s;
-}
-
-.line:nth-child(10)::after {
-     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00BFFF 75%, #00BFFF 100%);
-     animation-delay: 10.5s;
-}
-
-@keyframes drop {
+@keyframes shoot {
      0% {
-          top: -50%;
+          transform: translateX(0) translateY(0) rotate(25deg);
+          opacity: 1;
      }
 
      100% {
-          top: 110%;
+          transform: translateX(120vw) translateY(50vh) rotate(25deg);
+          opacity: 0;
      }
+}
+
+.stars::after {
+     content: "";
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     background: white;
+     box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white, 33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white, 57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white, 81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white, 3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white, 27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white, 51vw 92vh 2px white, 59vw 78vh 1px white;
+     animation: twinkle 6s infinite linear reverse;
 }
 </style>
