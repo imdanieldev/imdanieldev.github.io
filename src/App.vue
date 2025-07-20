@@ -352,7 +352,7 @@ onMounted(() => {
      width: 30px;
      height: 1px;
      background: linear-gradient(90deg, white, transparent);
-     animation: shoot 4s infinite cubic-bezier(0.95, 0.05, 0.8, 0.85);
+     animation: shoot 3s infinite cubic-bezier(0.95, 0.05, 0.8, 0.85);
 }
 
 .shooting-star:nth-child(1) {
@@ -375,17 +375,17 @@ onMounted(() => {
 .shooting-star:nth-child(4) {
      top: 35%;
      left: -100px;
-     animation-delay: 3s;
+     animation-delay: 3.5s;
 }
 .shooting-star:nth-child(5) {
      top: 45%;
      left: -100px;
-     animation-delay: 4s;
+     animation-delay: 4.5s;
 }
 .shooting-star:nth-child(6) {
      top: 50%;
      left: -100px;
-     animation-delay: 5s;
+     animation-delay: 5.5s;
 }
 @keyframes twinkle {
 
