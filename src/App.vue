@@ -55,6 +55,7 @@
                <div class="shooting-star"></div>
                <div class="shooting-star"></div>
                <div class="shooting-star"></div>
+               <div class="shooting-star"></div>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div class="flex justify-around px-2 items-center w-full gap-10 flex-col lg:flex-row">
                          <div
@@ -355,23 +356,37 @@ onMounted(() => {
 }
 
 .shooting-star:nth-child(1) {
-     top: 20%;
+     top: 10%;
      left: -100px;
      animation-delay: 0s;
 }
 
 .shooting-star:nth-child(2) {
-     top: 35%;
+     top: 25%;
      left: -100px;
      animation-delay: 2s;
 }
 
 .shooting-star:nth-child(3) {
-     top: 50%;
+     top: 40%;
      left: -100px;
      animation-delay: 4s;
 }
-
+.shooting-star:nth-child(4) {
+     top: 55%;
+     left: -100px;
+     animation-delay: 6s;
+}
+.shooting-star:nth-child(5) {
+     top: 75%;
+     left: -100px;
+     animation-delay: 8s;
+}
+.shooting-star:nth-child(6) {
+     top: 90%;
+     left: -100px;
+     animation-delay: 10s;
+}
 @keyframes twinkle {
 
      0%,
