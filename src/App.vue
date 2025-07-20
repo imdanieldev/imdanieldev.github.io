@@ -356,36 +356,36 @@ onMounted(() => {
 }
 
 .shooting-star:nth-child(1) {
-     top: 10%;
+     top: 5%;
      left: -100px;
      animation-delay: 0s;
 }
 
 .shooting-star:nth-child(2) {
+     top: 15%;
+     left: -100px;
+     animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
      top: 25%;
      left: -100px;
      animation-delay: 2s;
 }
-
-.shooting-star:nth-child(3) {
-     top: 40%;
+.shooting-star:nth-child(4) {
+     top: 35%;
+     left: -100px;
+     animation-delay: 3s;
+}
+.shooting-star:nth-child(5) {
+     top: 45%;
      left: -100px;
      animation-delay: 4s;
 }
-.shooting-star:nth-child(4) {
-     top: 55%;
-     left: -100px;
-     animation-delay: 6s;
-}
-.shooting-star:nth-child(5) {
-     top: 75%;
-     left: -100px;
-     animation-delay: 8s;
-}
 .shooting-star:nth-child(6) {
-     top: 90%;
+     top: 50%;
      left: -100px;
-     animation-delay: 10s;
+     animation-delay: 5s;
 }
 @keyframes twinkle {
 
