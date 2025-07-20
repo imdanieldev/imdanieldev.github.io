@@ -34,9 +34,9 @@
                     </ul>
                     <div
                          class="grid justify-around grid-cols-2 w-full sm:grid-cols-5 mt-2 items-center text-lg sm:text-xl contactbtn">
-                         <a class="cursor-pointer font-medium text-gradient break-words text-center mt-2 sm:mt-1"
+                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1"
                               href="//t.me/D6NTR">Telegram</a>
-                         <a class="cursor-pointer font-medium text-gradient break-words text-center mt-2 sm:mt-1"
+                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1"
                               href="//instagram.com/imdanieln2008">Instagram</a>
                          <a class="cursor-pointer mt-2 sm:mt-1 hidden sm:flex justify-center items-center animate-bounce godown"
                               href="#">
@@ -45,9 +45,9 @@
                                         d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
                               </svg>
                          </a>
-                         <a class="cursor-pointer font-medium text-gradient break-words text-center mt-2 sm:mt-1"
+                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1"
                               href="//imdanieldev.github.io/blog">Blog</a>
-                         <a class="cursor-pointer font-medium text-gradient break-words text-center mt-2 sm:mt-1"
+                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1"
                               href="//github.com/imdanieldev">Github</a>
                     </div>
                     <div class="block sm:hidden contactbtn2">
@@ -328,13 +328,6 @@ onMounted(() => {
 .border-gradient3 {
      border: 6px solid;
      border-image: linear-gradient(180deg, #00fcdb, #e500ff) 1;
-}
-
-.text-gradient {
-     background: linear-gradient(90deg, #00fcd2, #ff00dd);
-     background-clip: text;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
 }
 
 .my-box-shadow {
