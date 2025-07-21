@@ -116,7 +116,8 @@ onMounted(() => {
      });
      gsap.to(animateBox.value, {
           y: "100%",
-          scale: 1.1,
+          scale: 1.5,
+          filter: "blur(0.2rem)",
           scrollTrigger: {
                trigger: animateBox.value,
                pin: true,
