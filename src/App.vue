@@ -156,7 +156,7 @@ onMounted(() => {
           }
      });
      gsap.to(animateBox2.value, {
-          y: -100%,
+          background: " linear-gradient(to top, #0b0b2b, #1b2735 70%, #090a0f)",
           scrollTrigger: {
                trigger: animateBox2.value,
                pin: true,
