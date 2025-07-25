@@ -156,7 +156,7 @@ onMounted(() => {
           }
      });
      gsap.to(animateBox2.value, {
-          y: "100%",
+          y: -100%,
           scrollTrigger: {
                trigger: animateBox2.value,
                pin: true,
