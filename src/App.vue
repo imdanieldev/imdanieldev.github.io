@@ -4,7 +4,7 @@
           <section
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
                <div ref="animateBox"
-                    class="relative w-full flex justify-around items-center flex-col py-5 px-3 sm:px-7 h-svh">
+                    class="relative w-full flex justify-around items-center flex-col py-10 px-3 sm:px-7 h-svh">
                     <h1 class="text-center text-4xl sm:text-6xl break-words montserrat-500 name">Danial Nasr</h1>
                     <p class="text-center mt-2 text-xl sm:text-2xl my-text">
                          I am a web developer who works part time.
@@ -20,15 +20,17 @@
                     </ul>
                     <div
                          class="grid justify-around grid-cols-2 w-full sm:grid-cols-5 mt-2 items-center text-lg sm:text-xl contactbtn">
-                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
-                              href="//t.me/D6NTR">Telegram</a>
+                         <a class="flex justify-center gap-2 items-center cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
+                              href="//t.me/D6NTR">
+                              Telegram
+                         </a>
                          <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
                               href="//instagram.com/imdanieln2008">Instagram</a>
                          <a class="cursor-pointer mt-2 sm:mt-1 hidden sm:flex justify-center items-center animate-bounce godown"
                               href="#">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-white" viewBox="0 0 16 16">
-                                   <path fill-rule="evenodd"
-                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                              <svg viewbox="0 0 32 32" class="w-8 h-8 fill-white">
+                                   <path
+                                        d="M26.7 16l-1.9-1.9L17.3 21.6V5.3h-2.6v16.3l-7.5-7.5L5.3 16l10.7 10.7 10.7-10.7z" />
                               </svg>
                          </a>
                          <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
@@ -39,16 +41,16 @@
                     <div class="block sm:hidden contactbtn2">
                          <a class="cursor-pointer mt-2 sm:mt-1 flex animate-bounce justify-center items-center godown"
                               href="#">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 fill-white" viewBox="0 0 16 16">
-                                   <path fill-rule="evenodd"
-                                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                              <svg viewbox="0 0 32 32" class="w-8 h-8 fill-white">
+                                   <path
+                                        d="M26.7 16l-1.9-1.9L17.3 21.6V5.3h-2.6v16.3l-7.5-7.5L5.3 16l10.7 10.7 10.7-10.7z" />
                               </svg>
                          </a>
                     </div>
                </div>
           </section>
-          <section id="items"
-               class="my-box-shadow min-h-svh w-full overflow-hidden relative starsbg px-2 py-4 border-t-2 border-solid border-white z-10">
+          <section id="items" ref="animateBox2"
+               class="my-box-shadow min-h-svh w-full overflow-hidden relative starsbg px-2 py-4 z-10">
                <div class="stars"></div>
                <div class="shooting-star"></div>
                <div class="shooting-star"></div>
@@ -60,7 +62,15 @@
                     <div class="flex justify-around px-2 items-center w-full gap-10 flex-col lg:flex-row">
                          <div
                               class="border-gradient3 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:translate-y-9 transition-transform duration-700 hover:-translate-y-3 lg:hover:translate-y-6">
-                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center">Basic Plan</h3>
+                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                   <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
+                                        <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
+                                             opacity=".3" />
+                                        <path
+                                             d="M26.7 5.3H5.3c-1.5 0-2.7 1.2-2.6 2.7L2.7 24c0 1.5 1.2 2.7 2.6 2.7h21.4c1.5 0 2.7-1.2 2.6-2.7V8c0-1.5-1.2-2.7-2.6-2.7z m-7.4 18.7H5.3v-4.7h14V24z m0-7.3H5.3V12h14v4.7zM26.7 24h-4.7V12H26.7v12z" />
+                                   </svg>
+                                   Basic Plan
+                              </h3>
                               <p class="text-center">In this plan, we provide you with a static site using Vanilla JS
                                    and
                                    SCSS, which can be used
@@ -70,7 +80,15 @@
                          </div>
                          <div
                               class="border-gradient2 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 transition-transform duration-700 hover:-translate-y-3">
-                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center">Standard Plan</h3>
+                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                   <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
+                                        <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
+                                             opacity=".3" />
+                                        <path
+                                             d="M29.3 12.3l-9.6-0.8L16 2.7 12.3 11.5 2.7 12.3l7.2 6.3L7.8 28 16 23 24.2 28l-2.1-9.4L29.3 12.3zM16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7L16 20.5z" />
+                                   </svg>
+                                   Standard Plan
+                              </h3>
                               <p class="text-center">In this plan, we design a site for you using WordPress and valid
                                    plugins
                                    and templates. Any type of site is possible, whether it is an introduction, a blog,
@@ -83,7 +101,15 @@
                          </div>
                          <div
                               class="border-gradient1 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:-translate-y-9 transition-transform duration-700 hover:-translate-y-3 lg:hover:-translate-y-12">
-                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center">Essential Plan</h3>
+                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                   <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
+                                        <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
+                                             opacity=".3" />
+                                        <path
+                                             d="M25.3 4H6.7L2.7 12l13.3 16L29.3 12l-4-8z m-1.6 2.7l2 4h-3.6l-2-4h3.6zM8.3 6.7h3.6l-2 4H6.3l2-4zM14.7 22.2L7.3 13.3H14.7v8.9zM12.8 10.7l2-4h2.4l2 4H12.8zM17.3 22.2V13.3h7.4L17.3 22.2z" />
+                                   </svg>
+                                   Essential Plan
+                              </h3>
                               <p class="text-center">In this plan, a site is designed for you with PHP and VueJS, and
                                    the
                                    coding is completely proprietary, and while fully respecting security, it is written
@@ -94,7 +120,12 @@
                          </div>
                     </div>
                </div>
-
+          </section>
+          <section
+               class="my-box-shadow min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
+          <div>
+               Coming Soon...
+          </div>
           </section>
      </div>
 </template>
@@ -108,6 +139,7 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
 const animateBox = ref(null);
+const animateBox2 = ref(null);
 onMounted(() => {
      let smoother = ScrollSmoother.create({
           smooth: 1,
@@ -116,10 +148,17 @@ onMounted(() => {
      });
      gsap.to(animateBox.value, {
           y: "100%",
-          scale: 1.5,
-          filter: "blur(0.2rem)",
+          scale: 1.1,
           scrollTrigger: {
                trigger: animateBox.value,
+               pin: true,
+               scrub: true,
+          }
+     });
+     gsap.to(animateBox2.value, {
+          y: "100%",
+          scrollTrigger: {
+               trigger: animateBox2.value,
                pin: true,
                scrub: true,
           }
@@ -188,7 +227,7 @@ onMounted(() => {
      });
      gsap.from(contactbtn1.lines, {
           opacity: 0,
-          x: 200,
+          x: 100,
           stagger: 0.05,
           duration: 1,
           ease: "power3.Out",
@@ -196,7 +235,7 @@ onMounted(() => {
      });
      gsap.from(contactbtn2.lines, {
           opacity: 0,
-          x: 300,
+          x: 50,
           stagger: 0.05,
           duration: 1,
           ease: "power3.Out",
@@ -213,7 +252,7 @@ onMounted(() => {
      });
      gsap.from(contactbtn6.lines, {
           opacity: 0,
-          y: 100,
+          y: -100,
           scale: 2,
           stagger: 0.05,
           duration: 1,
@@ -222,7 +261,7 @@ onMounted(() => {
      });
      gsap.from(contactbtn4.lines, {
           opacity: 0,
-          x: -200,
+          x: -50,
           stagger: 0.05,
           duration: 1,
           ease: "power3.Out",
@@ -230,7 +269,7 @@ onMounted(() => {
      });
      gsap.from(contactbtn5.lines, {
           opacity: 0,
-          x: -300,
+          x: -100,
           stagger: 0.05,
           duration: 1,
           ease: "power3.Out",
@@ -241,12 +280,13 @@ onMounted(() => {
                event.preventDefault();
 
                gsap.to(window, {
-                    duration: 3,
+                    duration: 2,
                     scrollTo: document.querySelector("#items"),
-                    ease: "elastic.out(1,0.5)"
+                    ease: "elastic.out(1.5,0.75)"
                });
           });
      });
+     ScrollTrigger.refresh();
 });
 
 </script>
@@ -373,21 +413,25 @@ onMounted(() => {
      left: -100px;
      animation-delay: 2s;
 }
+
 .shooting-star:nth-child(4) {
      top: 35%;
      left: -100px;
      animation-delay: 3.5s;
 }
+
 .shooting-star:nth-child(5) {
      top: 45%;
      left: -100px;
      animation-delay: 4.5s;
 }
+
 .shooting-star:nth-child(6) {
      top: 50%;
      left: -100px;
      animation-delay: 5.5s;
 }
+
 @keyframes twinkle {
 
      0%,
