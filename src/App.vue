@@ -122,7 +122,7 @@
                </div>
           </section>
           <section
-               class="my-box-shadow min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
+               class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
           <div>
                Coming Soon...
           </div>
