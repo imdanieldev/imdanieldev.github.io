@@ -155,14 +155,6 @@ onMounted(() => {
                scrub: true,
           }
      });
-     gsap.to(animateBox2.value, {
-          background: " linear-gradient(to top, #0b0b2b, #1b2735 70%, #090a0f)",
-          scrollTrigger: {
-               trigger: animateBox2.value,
-               pin: false,
-               scrub: true,
-          }
-     });
      let split = new SplitText(".name", { type: "chars" });
      let words = new SplitText(".my-text", { type: "words" });
      let skill1 = new SplitText(".skills li:nth-child(1)", { type: "words" });
