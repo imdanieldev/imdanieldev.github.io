@@ -159,7 +159,7 @@ onMounted(() => {
           background: " linear-gradient(to top, #0b0b2b, #1b2735 70%, #090a0f)",
           scrollTrigger: {
                trigger: animateBox2.value,
-               pin: true,
+               pin: false,
                scrub: true,
           }
      });
