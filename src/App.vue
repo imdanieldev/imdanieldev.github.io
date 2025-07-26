@@ -4,7 +4,7 @@
           <section
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
                <div ref="animateBox"
-                    class="relative w-full flex justify-around items-center flex-col py-10 px-3 sm:px-7 h-svh">
+                    class="relative w-full flex justify-around items-center flex-col py-10 px-3 sm:px-7 min-h-svh">
                     <h1 class="text-center text-4xl sm:text-6xl break-words montserrat-500 name">Danial Nasr</h1>
                     <p class="text-center mt-2 text-xl sm:text-2xl my-text">
                          I am a web developer who works part time.
@@ -49,8 +49,7 @@
                     </div>
                </div>
           </section>
-          <section id="items" ref="animateBox2"
-               class="my-box-shadow min-h-svh w-full overflow-hidden relative starsbg px-2 py-4 z-10">
+          <section id="items" class="my-box-shadow min-h-svh w-full overflow-hidden relative starsbg px-2 py-4 z-10">
                <div class="stars"></div>
                <div class="shooting-star"></div>
                <div class="shooting-star"></div>
@@ -61,7 +60,7 @@
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div class="flex justify-around px-2 items-center w-full gap-10 flex-col lg:flex-row">
                          <div
-                              class="border-gradient3 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:translate-y-9 transition-transform duration-700 hover:-translate-y-3 lg:hover:translate-y-6">
+                              class="border-gradient3 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:translate-y-9">
                               <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                    <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                         <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
@@ -79,7 +78,7 @@
                                    using Zola, which is an SSG.</p>
                          </div>
                          <div
-                              class="border-gradient2 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 transition-transform duration-700 hover:-translate-y-3">
+                              class="border-gradient2 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0">
                               <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                    <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                         <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
@@ -100,7 +99,7 @@
                                    the responsibility of the customer.</p>
                          </div>
                          <div
-                              class="border-gradient1 relative bg-white/5 backdrop-blur-sm mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:-translate-y-9 transition-transform duration-700 hover:-translate-y-3 lg:hover:-translate-y-12">
+                              class="border-gradient1 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:-translate-y-9">
                               <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                    <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                         <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
@@ -121,11 +120,10 @@
                     </div>
                </div>
           </section>
-          <section
-               class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
-          <div>
-               Coming Soon...
-          </div>
+          <section class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4">
+               <div>
+                    Coming Soon...
+               </div>
           </section>
      </div>
 </template>
@@ -139,18 +137,38 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
 const animateBox = ref(null);
-const animateBox2 = ref(null);
 onMounted(() => {
      let smoother = ScrollSmoother.create({
-          smooth: 1,
+          smooth: 0.1,
           effects: true,
           normalizeScroll: true,
      });
      gsap.to(animateBox.value, {
           y: "100%",
-          scale: 1.1,
+          scale: 1.2,
           scrollTrigger: {
                trigger: animateBox.value,
+               pin: true,
+               scrub: true,
+          }
+     });
+     gsap.to(".border-gradient3", {
+          scrollTrigger: {
+               trigger: ".border-gradient3",
+               pin: true,
+               scrub: true,
+          }
+     });
+     gsap.to(".border-gradient2", {
+          scrollTrigger: {
+               trigger: ".border-gradient2",
+               pin: true,
+               scrub: true,
+          }
+     });
+     gsap.to(".border-gradient1", {
+          scrollTrigger: {
+               trigger: ".border-gradient1",
                pin: true,
                scrub: true,
           }
