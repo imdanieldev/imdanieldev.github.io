@@ -60,9 +60,10 @@
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div id="panels"
                          class="flex min-h-[300svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
-                         <div class="w-full grow-0 shrink-0 basis-full flex justify-end items-center panel">
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-end lg:justify-between items-center panel">
+                              <p class="text-2xl hidden lg:block">Start of plans (Scroll to see).</p>
                               <div
-                                   class="border-gradient3 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   class="border-gradient3 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
                                    <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
@@ -84,7 +85,7 @@
                          </div>
                          <div class="w-full grow-0 shrink-0 basis-full flex justify-center items-center panel h-fit">
                               <div
-                                   class="border-gradient2 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   class="border-gradient2 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
                                    <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
@@ -108,9 +109,9 @@
                                         the responsibility of the customer.</p>
                               </div>
                          </div>
-                         <div class="w-full grow-0 shrink-0 basis-full flex justify-start items-center panel">
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-between items-center panel pr-6">
                               <div
-                                   class="border-gradient1 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   class="border-gradient1 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
                                    <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
@@ -130,6 +131,7 @@
                                         design,
                                         and the provision of hosting and domain is the same as in the standard plan.</p>
                               </div>
+                              <p class="text-2xl hidden lg:block">The End (Prices are negotiable).</p>
                          </div>
                     </div>
                </div>
@@ -151,6 +153,9 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
 const animateBox = ref(null);
+window.addEventListener("resize",()=>{
+     location.reload();
+});
 onMounted(() => {
      let smoother = ScrollSmoother.create({
           smooth: 0.1,
@@ -304,7 +309,7 @@ onMounted(() => {
                gsap.to(window, {
                     duration: 2,
                     scrollTo: document.querySelector("#items"),
-                    ease: "elastic.out(1.5,0.5)"
+                    ease: "power1.inOut"
                });
           });
      });
