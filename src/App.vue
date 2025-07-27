@@ -58,64 +58,78 @@
                <div class="shooting-star"></div>
                <div class="shooting-star"></div>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
-                    <div class="flex justify-around px-2 items-center w-full gap-10 flex-col lg:flex-row">
-                         <div
-                              class="border-gradient3 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:translate-y-9">
-                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
-                                   <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
-                                        <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
-                                             opacity=".3" />
-                                        <path
-                                             d="M26.7 5.3H5.3c-1.5 0-2.7 1.2-2.6 2.7L2.7 24c0 1.5 1.2 2.7 2.6 2.7h21.4c1.5 0 2.7-1.2 2.6-2.7V8c0-1.5-1.2-2.7-2.6-2.7z m-7.4 18.7H5.3v-4.7h14V24z m0-7.3H5.3V12h14v4.7zM26.7 24h-4.7V12H26.7v12z" />
-                                   </svg>
-                                   Basic Plan
-                              </h3>
-                              <p class="text-center">In this plan, we provide you with a static site using Vanilla JS
-                                   and
-                                   SCSS, which can be used
-                                   to introduce a company or build a portfolio, and if you want a blog, we will create
-                                   it
-                                   using Zola, which is an SSG.</p>
+                    <div id="panels"
+                         class="flex min-h-[300svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-end items-center panel">
+                              <div
+                                   class="border-gradient3 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                        <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
+                                             <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
+                                                  opacity=".3" />
+                                             <path
+                                                  d="M26.7 5.3H5.3c-1.5 0-2.7 1.2-2.6 2.7L2.7 24c0 1.5 1.2 2.7 2.6 2.7h21.4c1.5 0 2.7-1.2 2.6-2.7V8c0-1.5-1.2-2.7-2.6-2.7z m-7.4 18.7H5.3v-4.7h14V24z m0-7.3H5.3V12h14v4.7zM26.7 24h-4.7V12H26.7v12z" />
+                                        </svg>
+                                        Basic Plan
+                                   </h3>
+                                   <p class="text-center">In this plan, we provide you with a static site using Vanilla
+                                        JS
+                                        and
+                                        SCSS, which can be used
+                                        to introduce a company or build a portfolio, and if you want a blog, we will
+                                        create
+                                        it
+                                        using Zola, which is an SSG.</p>
+                              </div>
                          </div>
-                         <div
-                              class="border-gradient2 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0">
-                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
-                                   <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
-                                        <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
-                                             opacity=".3" />
-                                        <path
-                                             d="M29.3 12.3l-9.6-0.8L16 2.7 12.3 11.5 2.7 12.3l7.2 6.3L7.8 28 16 23 24.2 28l-2.1-9.4L29.3 12.3zM16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7L16 20.5z" />
-                                   </svg>
-                                   Standard Plan
-                              </h3>
-                              <p class="text-center">In this plan, we design a site for you using WordPress and valid
-                                   plugins
-                                   and templates. Any type of site is possible, whether it is an introduction, a blog,
-                                   or a
-                                   store. If necessary, a special template will be created for your site. You can
-                                   provide an
-                                   SMS package for user registration. Hosting and domain provision are required and can
-                                   be
-                                   the responsibility of the customer.</p>
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-center items-center panel h-fit">
+                              <div
+                                   class="border-gradient2 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                        <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
+                                             <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
+                                                  opacity=".3" />
+                                             <path
+                                                  d="M29.3 12.3l-9.6-0.8L16 2.7 12.3 11.5 2.7 12.3l7.2 6.3L7.8 28 16 23 24.2 28l-2.1-9.4L29.3 12.3zM16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7L16 20.5z" />
+                                        </svg>
+                                        Standard Plan
+                                   </h3>
+                                   <p class="text-center">In this plan, we design a site for you using WordPress and
+                                        valid
+                                        plugins
+                                        and templates. Any type of site is possible, whether it is an introduction, a
+                                        blog,
+                                        or a
+                                        store. If necessary, a special template will be created for your site. You can
+                                        provide an
+                                        SMS package for user registration. Hosting and domain provision are required and
+                                        can
+                                        be
+                                        the responsibility of the customer.</p>
+                              </div>
                          </div>
-                         <div
-                              class="border-gradient1 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7 translate-y-0 lg:-translate-y-9">
-                              <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
-                                   <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
-                                        <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
-                                             opacity=".3" />
-                                        <path
-                                             d="M25.3 4H6.7L2.7 12l13.3 16L29.3 12l-4-8z m-1.6 2.7l2 4h-3.6l-2-4h3.6zM8.3 6.7h3.6l-2 4H6.3l2-4zM14.7 22.2L7.3 13.3H14.7v8.9zM12.8 10.7l2-4h2.4l2 4H12.8zM17.3 22.2V13.3h7.4L17.3 22.2z" />
-                                   </svg>
-                                   Essential Plan
-                              </h3>
-                              <p class="text-center">In this plan, a site is designed for you with PHP and VueJS, and
-                                   the
-                                   coding is completely proprietary, and while fully respecting security, it is written
-                                   in
-                                   the most optimal way possible using Tailwind CSS. A separate fee is required for
-                                   design,
-                                   and the provision of hosting and domain is the same as in the standard plan.</p>
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-start items-center panel">
+                              <div
+                                   class="border-gradient1 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[40vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                        <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
+                                             <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
+                                                  opacity=".3" />
+                                             <path
+                                                  d="M25.3 4H6.7L2.7 12l13.3 16L29.3 12l-4-8z m-1.6 2.7l2 4h-3.6l-2-4h3.6zM8.3 6.7h3.6l-2 4H6.3l2-4zM14.7 22.2L7.3 13.3H14.7v8.9zM12.8 10.7l2-4h2.4l2 4H12.8zM17.3 22.2V13.3h7.4L17.3 22.2z" />
+                                        </svg>
+                                        Essential Plan
+                                   </h3>
+                                   <p class="text-center">In this plan, a site is designed for you with PHP and VueJS,
+                                        and
+                                        the
+                                        coding is completely proprietary, and while fully respecting security, it is
+                                        written
+                                        in
+                                        the most optimal way possible using Tailwind CSS. A separate fee is required for
+                                        design,
+                                        and the provision of hosting and domain is the same as in the standard plan.</p>
+                              </div>
                          </div>
                     </div>
                </div>
@@ -143,6 +157,24 @@ onMounted(() => {
           effects: true,
           normalizeScroll: true,
      });
+     const panel = gsap.utils.toArray("#panels .panel");
+     let tween;
+     tween = gsap.to(panel, {
+          x: () => -1 * (document.querySelector("#panels").scrollWidth - innerWidth),
+          ease: "none",
+          scrollTrigger: {
+               trigger: "#panels",
+               pin: true,
+               start: "top top",
+               scrub: 1,
+               // end:  () => "+=" + (document.querySelector("#panels").scrollWidth - innerWidth),
+               end: "bottom bottom",
+               pinReparent: false,
+               pinSpacing: false,
+               pinSpacer: false,
+               snap: false,
+          }
+     });
      gsap.to(animateBox.value, {
           y: "100%",
           scale: 1.2,
@@ -152,27 +184,7 @@ onMounted(() => {
                scrub: true,
           }
      });
-     gsap.to(".border-gradient3", {
-          scrollTrigger: {
-               trigger: ".border-gradient3",
-               pin: true,
-               scrub: true,
-          }
-     });
-     gsap.to(".border-gradient2", {
-          scrollTrigger: {
-               trigger: ".border-gradient2",
-               pin: true,
-               scrub: true,
-          }
-     });
-     gsap.to(".border-gradient1", {
-          scrollTrigger: {
-               trigger: ".border-gradient1",
-               pin: true,
-               scrub: true,
-          }
-     });
+     console.log(document.querySelector("#panels").scrollWidth - innerWidth)
      let split = new SplitText(".name", { type: "chars" });
      let words = new SplitText(".my-text", { type: "words" });
      let skill1 = new SplitText(".skills li:nth-child(1)", { type: "words" });
@@ -292,7 +304,7 @@ onMounted(() => {
                gsap.to(window, {
                     duration: 2,
                     scrollTo: document.querySelector("#items"),
-                    ease: "elastic.out(1.5,0.75)"
+                    ease: "elastic.out(1.5,0.5)"
                });
           });
      });
@@ -386,7 +398,8 @@ onMounted(() => {
 }
 
 .starsbg {
-     background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+     /* background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f); */
+     background-color: #0b0b2b;
 }
 
 .stars {
