@@ -153,9 +153,6 @@ import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
 const animateBox = ref(null);
-window.addEventListener("resize",()=>{
-     location.reload();
-});
 onMounted(() => {
      let smoother = ScrollSmoother.create({
           smooth: 0.1,
@@ -313,7 +310,6 @@ onMounted(() => {
                });
           });
      });
-     ScrollTrigger.refresh();
 });
 
 </script>
