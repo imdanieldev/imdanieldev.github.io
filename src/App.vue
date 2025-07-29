@@ -1,8 +1,31 @@
 <template>
      <div
           class="selection:bg-slate-900 montserrat-400 flex-col selection:text-white min-h-svh bg-transparent text-white w-full relative flex justify-center items-center">
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
+          <div class="shooting-star"></div>
           <section
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
+               <div class="stars top-0"></div>
                <div ref="animateBox"
                     class="relative w-full flex justify-around items-center flex-col py-10 px-3 sm:px-7 min-h-svh">
                     <h1 class="text-center text-4xl sm:text-6xl break-words montserrat-500 name">Danial Nasr</h1>
@@ -49,21 +72,18 @@
                     </div>
                </div>
           </section>
-          <section id="items" class="my-box-shadow min-h-svh w-full overflow-hidden relative starsbg px-2 py-4 z-10">
-               <div class="stars"></div>
-               <div class="shooting-star"></div>
-               <div class="shooting-star"></div>
-               <div class="shooting-star"></div>
-               <div class="shooting-star"></div>
-               <div class="shooting-star"></div>
-               <div class="shooting-star"></div>
+          <section id="items" class="my-box-shadow min-h-svh w-full overflow-hidden relative px-2 py-4 z-10">
+               <div class="stars top-0"></div>
+               <div class="stars top-1/3"></div>
+               <div class="stars top-2/3"></div>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div id="panels"
                          class="flex min-h-[600svh] lg:min-h-[300svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
-                         <div class="w-full grow-0 shrink-0 basis-full flex justify-end lg:justify-between items-center panel">
+                         <div
+                              class="w-full grow-0 shrink-0 basis-full flex justify-end lg:justify-between items-center panel">
                               <p class="text-2xl hidden lg:block">Start of plans (Scroll to see).</p>
                               <div
-                                   class="border-gradient3 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   class="border-gradient3 relative bg-white/5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
                                    <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
@@ -85,7 +105,7 @@
                          </div>
                          <div class="w-full grow-0 shrink-0 basis-full flex justify-center items-center panel h-fit">
                               <div
-                                   class="border-gradient2 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   class="border-gradient2 relative bg-white/5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
                                    <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
@@ -111,7 +131,7 @@
                          </div>
                          <div class="w-full grow-0 shrink-0 basis-full flex justify-between items-center panel pr-6">
                               <div
-                                   class="border-gradient1 relative bg-white/5 backdrop-blur-lg mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   class="border-gradient1 relative bg-white/5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
                                    <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
@@ -136,7 +156,8 @@
                     </div>
                </div>
           </section>
-          <section class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4">
+          <section class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
+               <div class="stars top-0"></div>
                <div>
                     Coming Soon...
                </div>
@@ -313,7 +334,7 @@ onMounted(() => {
 });
 
 </script>
-<style scoped>
+<style scoped lang="scss">
 .border-gradient1 {
      border: 6px solid;
      border-image: linear-gradient(60deg, #00fcdb, #e500ff) 1;
@@ -327,6 +348,9 @@ onMounted(() => {
 .border-gradient3 {
      border: 6px solid;
      border-image: linear-gradient(180deg, #00fcdb, #e500ff) 1;
+     backdrop-filter: blur(60px);
+     z-index: 40;
+     position: relative;
 }
 
 .my-box-shadow {
@@ -399,22 +423,21 @@ onMounted(() => {
 }
 
 .starsbg {
-     /* background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f); */
      background-color: #0b0b2b;
 }
 
 .stars {
      width: 1px;
      height: 1px;
-     position: fixed;
-     top: 0;
+     position: absolute;
      left: 0;
      background: white;
      box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white, 22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white, 38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white, 53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white, 68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white, 83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white, 98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white, 18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white, 35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white, 50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white, 65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white, 80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white, 95vw 75vh 2px white;
-     animation: twinkle 8s infinite linear;
+     z-index: 20;
 }
 
 .shooting-star {
+     z-index: 20;
      position: fixed;
      width: 30px;
      height: 1px;
@@ -423,31 +446,31 @@ onMounted(() => {
 }
 
 .shooting-star:nth-child(1) {
-     top: 5%;
+     top: 0%;
      left: -100px;
      animation-delay: 0s;
 }
 
 .shooting-star:nth-child(2) {
-     top: 15%;
+     top: 10%;
      left: -100px;
      animation-delay: 1s;
 }
 
 .shooting-star:nth-child(3) {
-     top: 25%;
+     top: 20%;
      left: -100px;
      animation-delay: 2s;
 }
 
 .shooting-star:nth-child(4) {
-     top: 35%;
+     top: 30%;
      left: -100px;
      animation-delay: 3.5s;
 }
 
 .shooting-star:nth-child(5) {
-     top: 45%;
+     top: 40%;
      left: -100px;
      animation-delay: 4.5s;
 }
@@ -458,16 +481,100 @@ onMounted(() => {
      animation-delay: 5.5s;
 }
 
-@keyframes twinkle {
+.shooting-star:nth-child(7) {
+     top: 60%;
+     left: -100px;
+     animation-delay: 6.5s;
+}
 
-     0%,
-     100% {
-          opacity: 0.8;
-     }
+.shooting-star:nth-child(8) {
+     top: 70%;
+     left: -100px;
+     animation-delay: 7s;
+}
 
-     50% {
-          opacity: 0.4;
-     }
+.shooting-star:nth-child(9) {
+     top: 80%;
+     left: -100px;
+     animation-delay: 8s;
+}
+
+.shooting-star:nth-child(10) {
+     top: 90%;
+     left: -100px;
+     animation-delay: 8s;
+}
+
+.shooting-star:nth-child(11) {
+     top: 85%;
+     left: -100px;
+     animation-delay: 9s;
+}
+
+.shooting-star:nth-child(12) {
+     top: 0%;
+     left: -150px;
+     animation-delay: 10s;
+}
+
+.shooting-star:nth-child(13) {
+     top: 10%;
+     left: -150px;
+     animation-delay: 11s;
+}
+
+.shooting-star:nth-child(14) {
+     top: 20%;
+     left: -150px;
+     animation-delay: 12s;
+}
+
+.shooting-star:nth-child(15) {
+     top: 30%;
+     left: -150px;
+     animation-delay: 13s;
+}
+
+.shooting-star:nth-child(16) {
+     top: 40%;
+     left: -150px;
+     animation-delay: 14s;
+}
+
+.shooting-star:nth-child(17) {
+     top: 50%;
+     left: -150px;
+     animation-delay: 15s;
+}
+
+.shooting-star:nth-child(18) {
+     top: 60%;
+     left: -150px;
+     animation-delay: 16.5s;
+}
+
+.shooting-star:nth-child(19) {
+     top: 70%;
+     left: -150px;
+     animation-delay: 17s;
+}
+
+.shooting-star:nth-child(20) {
+     top: 80%;
+     left: -150px;
+     animation-delay: 18s;
+}
+
+.shooting-star:nth-child(21) {
+     top: 90%;
+     left: -200px;
+     animation-delay: 19.5s;
+}
+
+.shooting-star:nth-child(22) {
+     top: 85%;
+     left: -50px;
+     animation-delay: 20.5s;
 }
 
 @keyframes shoot {
