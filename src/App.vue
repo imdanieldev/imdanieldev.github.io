@@ -1,67 +1,105 @@
 <template>
      <div
           class="selection:bg-slate-900 montserrat-400 flex-col selection:text-white min-h-svh bg-transparent text-white w-full relative flex justify-center items-center">
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
-          <div class="shooting-star"></div>
           <section
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
                <div class="stars top-0"></div>
-               <div ref="animateBox"
-                    class="relative w-full flex justify-around items-center flex-col py-10 px-3 sm:px-7 min-h-svh">
-                    <h1 class="text-center text-4xl sm:text-6xl break-words montserrat-500 name">Danial Nasr</h1>
-                    <p class="text-center mt-2 text-xl sm:text-2xl my-text">
-                         I am a web developer who works part time.
-                         <br />
-                         I entered the field professionally from 2020.
-                    </p>
-                    <ul
-                         class="grid grid-cols-1 mt-8 w-full justify-around text-center sm:grid-cols-2 text-lg sm:text-xl skills">
-                         <li class="list-none sm:mt-1 mt-2 break-words">HTML - CSS</li>
-                         <li class="list-none sm:mt-1 mt-2 break-words">JavaScript - VueJs</li>
-                         <li class="list-none sm:mt-1 mt-2 break-words">Gsap - Tailwindcss</li>
-                         <li class="list-none sm:mt-1 mt-2 break-words">Wordpress - PHP</li>
-                    </ul>
-                    <div
-                         class="grid justify-around grid-cols-2 w-full sm:grid-cols-5 mt-2 items-center text-lg sm:text-xl contactbtn">
-                         <a class="flex justify-center gap-2 items-center cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
-                              href="//t.me/D6NTR">
-                              Telegram
-                         </a>
-                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
-                              href="//instagram.com/imdanieln2008">Instagram</a>
-                         <a class="cursor-pointer mt-2 sm:mt-1 hidden sm:flex justify-center items-center animate-bounce godown"
-                              href="#">
-                              <svg viewbox="0 0 32 32" class="w-8 h-8 fill-white">
-                                   <path
-                                        d="M26.7 16l-1.9-1.9L17.3 21.6V5.3h-2.6v16.3l-7.5-7.5L5.3 16l10.7 10.7 10.7-10.7z" />
-                              </svg>
-                         </a>
-                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
-                              href="//imdanieldev.github.io/blog">Blog</a>
-                         <a class="cursor-pointer font-medium break-words text-center mt-2 sm:mt-1 decoration-white decoration-1 decoration-solid underline transition-colors hover:text-blue-400 hover:decoration-blue-400"
-                              href="//github.com/imdanieldev">Github</a>
+               <div class="relative text-center w-full flex justify-between items-center sm:items-start flex-col py-5 sm:py-12 px-3 sm:px-2 min-h-svh gap-5">
+                    <div class="flex flex-col items-center sm:items-start gap-2 sm:gap-5">
+                         <div class="flex flex-col justify-center items-center sm:items-start gap-1 sm:gap-5">
+                              <span class="text-2xl sm:text-3xl text-gray-300/60">Hi I'm </span>
+
+                              <h1
+                                   class="name gradient-text select-none cursor-text uppercase text-center text-4xl sm:text-6xl break-words montserrat-500">
+                                   Danial Nasr
+                              </h1>
+                              <h3 class="text-gray-300/40 text-xl sm:text-2xl">
+                                   Web Developer
+                              </h3>
+                         </div>
+                         <div class="block">
+                              <p class="mt-1 sm:mt-2 text-lg sm:text-2xl text-gray-300">
+                                   I am a web developer who works part time.
+                              </p>
+                              <p class="mt-1 sm:mt-2 text-lg sm:text-2xl text-gray-300">
+                                   I entered the field <span
+                                        class="rounded-md bg-gradient-to-r py-0.5 px-1 text-black from-[#00ffd5] to-[#3aff4a]">professionally</span>
+                                   from 2020.
+                              </p>
+                         </div>
                     </div>
-                    <div class="block sm:hidden contactbtn2">
+                    <div>
+                         <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
+                              <li><a href="//t.me/D6NTR" target="_blank" rel="noopener noreferrer"
+                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-[#0088cc] hover:border-[#0088cc] justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+                                        </svg>
+                                        Telegram
+                                   </a></li>
+                              <li><a href="//instagram.com/imdanieln2008" target="_blank" rel="noopener noreferrer"
+                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 from-[#833AB4] via-[#FD1D1D] to-[#FCB045] hover:bg-gradient-to-r hover:border-black justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                        </svg>
+                                        Instagram
+                                   </a></li>
+                              <li><a href="//wa.me/+989944902292" target="_blank" rel="noopener noreferrer"
+                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-[#25D366] hover:border-[#25D366] hover:text-black justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                        </svg>
+                                        Whatsapp
+                                   </a></li>
+                              <li><a href="//x.com//imdanialdev?s=09" target="_blank" rel="noopener noreferrer"
+                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                                        </svg>
+                                        Twitter
+                                   </a></li>
+                              <li><a href="//github.com/imdanieldev" target="_blank" rel="noopener noreferrer"
+                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
+                                        <svg xmlns=" http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                        </svg>
+                                        Github
+                                   </a></li>
+                              <li><a href="//imdanieldev.github.io/blog" target="_blank"
+                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                                        </svg>
+                                        Blog
+                                   </a></li>
+                              <li>
+                                   <a href="/CV.pdf"
+                                        class="flex items-center justify-center gap-1 rounded-md bg-gradient-to-r text-lg py-1 px-2 text-black from-[#00ffd5] to-[#3aff4a]"
+                                        download>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
+                                             viewBox="0 0 16 16">
+                                             <path
+                                                  d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                             <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                        </svg>
+                                        Download Resume
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+                    <div>
                          <a class="cursor-pointer mt-2 sm:mt-1 flex animate-bounce justify-center items-center godown"
                               href="#">
                               <svg viewbox="0 0 32 32" class="w-8 h-8 fill-white">
@@ -72,26 +110,27 @@
                     </div>
                </div>
           </section>
-          <section id="items" class="my-box-shadow min-h-svh w-full overflow-hidden relative px-2 py-4 z-10">
+          <section id="items"
+               class="my-box-shadow min-h-svh w-full overflow-hidden relative px-2 py-4 z-10 bg-blue-950/5 flex justify-start flex-col items-center">
                <div class="stars top-0"></div>
                <div class="stars top-1/3"></div>
                <div class="stars top-2/3"></div>
+               <h2 class="text-2xl sm:text-4xl montserrat-600 uppercase tracking-[1rem]">Plans:</h2>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div id="panels"
                          class="flex min-h-[600svh] lg:min-h-[300svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
-                         <div
-                              class="w-full grow-0 shrink-0 basis-full flex justify-end lg:justify-between items-center panel">
-                              <p class="text-2xl hidden lg:block">Start of plans (Scroll to see).</p>
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-end items-center panel">
                               <div
-                                   class="border-gradient3 relative bg-white/5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
-                                   <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                   class="border-gradient3 relative bg-white/5 transition-all duration-500 translate-y-0 hover:-translate-y-5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   <h3
+                                        class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2 flex-wrap justify-center">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M5.3 12h14v4.7H5.3z m0 7.3h14V24H5.3zM22 12H26.7v12h-4.7z"
                                                   opacity=".3" />
                                              <path
                                                   d="M26.7 5.3H5.3c-1.5 0-2.7 1.2-2.6 2.7L2.7 24c0 1.5 1.2 2.7 2.6 2.7h21.4c1.5 0 2.7-1.2 2.6-2.7V8c0-1.5-1.2-2.7-2.6-2.7z m-7.4 18.7H5.3v-4.7h14V24z m0-7.3H5.3V12h14v4.7zM26.7 24h-4.7V12H26.7v12z" />
                                         </svg>
-                                        Basic Plan
+                                        Basic
                                    </h3>
                                    <p class="text-center">In this plan, we provide you with a static site using Vanilla
                                         JS
@@ -105,15 +144,16 @@
                          </div>
                          <div class="w-full grow-0 shrink-0 basis-full flex justify-center items-center panel h-fit">
                               <div
-                                   class="border-gradient2 relative bg-white/5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
-                                   <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                   class="border-gradient2 relative bg-white/5 transition-all duration-500 translate-y-0 hover:-translate-y-5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   <h3
+                                        class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2 flex-wrap justify-center">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7z"
                                                   opacity=".3" />
                                              <path
                                                   d="M29.3 12.3l-9.6-0.8L16 2.7 12.3 11.5 2.7 12.3l7.2 6.3L7.8 28 16 23 24.2 28l-2.1-9.4L29.3 12.3zM16 20.5l-5 3.1 1.3-5.7-4.4-3.9 5.8-0.5L16 8.1l2.3 5.4 5.8 0.5-4.4 3.9 1.3 5.7L16 20.5z" />
                                         </svg>
-                                        Standard Plan
+                                        Standard
                                    </h3>
                                    <p class="text-center">In this plan, we design a site for you using WordPress and
                                         valid
@@ -129,17 +169,18 @@
                                         the responsibility of the customer.</p>
                               </div>
                          </div>
-                         <div class="w-full grow-0 shrink-0 basis-full flex justify-between items-center panel pr-6">
+                         <div class="w-full grow-0 shrink-0 basis-full flex justify-start items-center panel pr-6">
                               <div
-                                   class="border-gradient1 relative bg-white/5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
-                                   <h3 class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2">
+                                   class="border-gradient1 relative bg-white/5 transition-all duration-500 translate-y-0 hover:-translate-y-5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
+                                   <h3
+                                        class="text-2xl montserrat-500 tracking-[0.5rem] text-center flex gap-2 flex-wrap justify-center">
                                         <svg viewbox="0 0 32 32" class="w-8 h-8 fill-current stroke-black">
                                              <path d="M11.8 6.7H8.3l-2 4h3.5z m13.9 4l-2-4h-3.5l2 4zM14.7 22.2V13.3H7.3z m2.6 0L24.7 13.3H17.3zM17.2 6.7h-2.4l-2 4h6.4z"
                                                   opacity=".3" />
                                              <path
                                                   d="M25.3 4H6.7L2.7 12l13.3 16L29.3 12l-4-8z m-1.6 2.7l2 4h-3.6l-2-4h3.6zM8.3 6.7h3.6l-2 4H6.3l2-4zM14.7 22.2L7.3 13.3H14.7v8.9zM12.8 10.7l2-4h2.4l2 4H12.8zM17.3 22.2V13.3h7.4L17.3 22.2z" />
                                         </svg>
-                                        Essential Plan
+                                        Essential
                                    </h3>
                                    <p class="text-center">In this plan, a site is designed for you with PHP and VueJS,
                                         and
@@ -151,7 +192,6 @@
                                         design,
                                         and the provision of hosting and domain is the same as in the standard plan.</p>
                               </div>
-                              <p class="text-2xl hidden lg:block">The End (Prices are negotiable).</p>
                          </div>
                     </div>
                </div>
@@ -159,13 +199,13 @@
           <section class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
                <div class="stars top-0"></div>
                <div>
-                    Coming Soon...
+                    Cooming Soon...
                </div>
           </section>
      </div>
 </template>
 <script setup>
-import { onMounted, ref } from 'vue';
+import { onMounted } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
@@ -173,7 +213,6 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
-const animateBox = ref(null);
 onMounted(() => {
      let smoother = ScrollSmoother.create({
           smooth: 0.1,
@@ -198,127 +237,15 @@ onMounted(() => {
                snap: false,
           }
      });
-     gsap.to(animateBox.value, {
-          y: "100%",
-          scale: 1.2,
-          scrollTrigger: {
-               trigger: animateBox.value,
-               pin: true,
-               scrub: true,
-          }
-     });
-     console.log(document.querySelector("#panels").scrollWidth - innerWidth)
-     let split = new SplitText(".name", { type: "chars" });
-     let words = new SplitText(".my-text", { type: "words" });
-     let skill1 = new SplitText(".skills li:nth-child(1)", { type: "words" });
-     let skill2 = new SplitText(".skills li:nth-child(2)", { type: "words" });
-     let skill3 = new SplitText(".skills li:nth-child(3)", { type: "words" });
-     let skill4 = new SplitText(".skills li:nth-child(4)", { type: "words" });
-     let contactbtn1 = new SplitText(".contactbtn a:nth-child(1)", { type: "lines" });
-     let contactbtn2 = new SplitText(".contactbtn a:nth-child(2)", { type: "lines" });
-     let contactbtn3 = new SplitText(".contactbtn a:nth-child(3)", { type: "lines" });
-     let contactbtn4 = new SplitText(".contactbtn a:nth-child(4)", { type: "lines" });
-     let contactbtn5 = new SplitText(".contactbtn a:nth-child(5)", { type: "lines" });
-     let contactbtn6 = new SplitText(".contactbtn2", { type: "lines" });
-     gsap.from(split.chars, {
-          opacity: 0,
-          y: 200,
-          duration: 4,
-          ease: "bounce.out",
-          stagger: 0.04
-     });
-     gsap.from(words.words, {
-          opacity: 0,
+     let myname = new SplitText(".name", { type: "chars" });
+     gsap.from(myname.chars, {
+          scale: 0,
           x: 50,
-          stagger: 0.2,
-          duration: 0.2,
-          delay: 4
-     });
-     gsap.from(skill1.words, {
           opacity: 0,
-          y: 200,
-          scale: 2,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.inOut",
-          delay: 7
-     });
-     gsap.from(skill2.words, {
-          opacity: 0,
-          y: 200,
-          scale: 2,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.inOut",
-          delay: 8
-     });
-     gsap.from(skill3.words, {
-          opacity: 0,
-          y: 200,
-          scale: 2,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.inOut",
-          delay: 9
-     });
-     gsap.from(skill4.words, {
-          opacity: 0,
-          y: 200,
-          scale: 2,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.inOut",
-          delay: 10
-     });
-     gsap.from(contactbtn1.lines, {
-          opacity: 0,
-          x: 100,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.Out",
-          delay: 11
-     });
-     gsap.from(contactbtn2.lines, {
-          opacity: 0,
-          x: 50,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.Out",
-          delay: 12
-     });
-     gsap.from(contactbtn3.lines, {
-          opacity: 0,
-          y: 100,
-          scale: 2,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.Out",
-          delay: 13
-     });
-     gsap.from(contactbtn6.lines, {
-          opacity: 0,
-          y: -100,
-          scale: 2,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.Out",
-          delay: 13
-     });
-     gsap.from(contactbtn4.lines, {
-          opacity: 0,
-          x: -50,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.Out",
-          delay: 15
-     });
-     gsap.from(contactbtn5.lines, {
-          opacity: 0,
-          x: -100,
-          stagger: 0.05,
-          duration: 1,
-          ease: "power3.Out",
-          delay: 14
+          duration: 0.5,
+          ease: "power2.out",
+          stagger: 0.1,
+          delay: 0.5
      });
      document.querySelectorAll(".godown").forEach((item) => {
           item.addEventListener("click", (event) => {
@@ -334,23 +261,28 @@ onMounted(() => {
 });
 
 </script>
-<style scoped lang="scss">
+<style scoped>
+.gradient-text {
+     background-image: linear-gradient(to right, #00ffd5, #3aff4a);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     color: transparent;
+}
+
 .border-gradient1 {
      border: 6px solid;
-     border-image: linear-gradient(60deg, #00fcdb, #e500ff) 1;
+     border-image: linear-gradient(60deg, #00ffd5, #3aff4a) 1;
 }
 
 .border-gradient2 {
      border: 6px solid;
-     border-image: linear-gradient(120deg, #00fcdb, #e500ff) 1;
+     border-image: linear-gradient(120deg, #00ffd5, #3aff4a) 1;
 }
 
 .border-gradient3 {
      border: 6px solid;
-     border-image: linear-gradient(180deg, #00fcdb, #e500ff) 1;
-     backdrop-filter: blur(60px);
-     z-index: 40;
-     position: relative;
+     border-image: linear-gradient(180deg, #00ffd5, #3aff4a) 1;
 }
 
 .my-box-shadow {
@@ -422,10 +354,6 @@ onMounted(() => {
      font-style: normal;
 }
 
-.starsbg {
-     background-color: #0b0b2b;
-}
-
 .stars {
      width: 1px;
      height: 1px;
@@ -436,159 +364,6 @@ onMounted(() => {
      z-index: 20;
 }
 
-.shooting-star {
-     z-index: 20;
-     position: fixed;
-     width: 30px;
-     height: 1px;
-     background: linear-gradient(90deg, white, transparent);
-     animation: shoot 3s infinite cubic-bezier(0.95, 0.05, 0.8, 0.85);
-}
-
-.shooting-star:nth-child(1) {
-     top: 0%;
-     left: -100px;
-     animation-delay: 0s;
-}
-
-.shooting-star:nth-child(2) {
-     top: 10%;
-     left: -100px;
-     animation-delay: 1s;
-}
-
-.shooting-star:nth-child(3) {
-     top: 20%;
-     left: -100px;
-     animation-delay: 2s;
-}
-
-.shooting-star:nth-child(4) {
-     top: 30%;
-     left: -100px;
-     animation-delay: 3.5s;
-}
-
-.shooting-star:nth-child(5) {
-     top: 40%;
-     left: -100px;
-     animation-delay: 4.5s;
-}
-
-.shooting-star:nth-child(6) {
-     top: 50%;
-     left: -100px;
-     animation-delay: 5.5s;
-}
-
-.shooting-star:nth-child(7) {
-     top: 60%;
-     left: -100px;
-     animation-delay: 6.5s;
-}
-
-.shooting-star:nth-child(8) {
-     top: 70%;
-     left: -100px;
-     animation-delay: 7s;
-}
-
-.shooting-star:nth-child(9) {
-     top: 80%;
-     left: -100px;
-     animation-delay: 8s;
-}
-
-.shooting-star:nth-child(10) {
-     top: 90%;
-     left: -100px;
-     animation-delay: 8s;
-}
-
-.shooting-star:nth-child(11) {
-     top: 85%;
-     left: -100px;
-     animation-delay: 9s;
-}
-
-.shooting-star:nth-child(12) {
-     top: 0%;
-     left: -150px;
-     animation-delay: 10s;
-}
-
-.shooting-star:nth-child(13) {
-     top: 10%;
-     left: -150px;
-     animation-delay: 11s;
-}
-
-.shooting-star:nth-child(14) {
-     top: 20%;
-     left: -150px;
-     animation-delay: 12s;
-}
-
-.shooting-star:nth-child(15) {
-     top: 30%;
-     left: -150px;
-     animation-delay: 13s;
-}
-
-.shooting-star:nth-child(16) {
-     top: 40%;
-     left: -150px;
-     animation-delay: 14s;
-}
-
-.shooting-star:nth-child(17) {
-     top: 50%;
-     left: -150px;
-     animation-delay: 15s;
-}
-
-.shooting-star:nth-child(18) {
-     top: 60%;
-     left: -150px;
-     animation-delay: 16.5s;
-}
-
-.shooting-star:nth-child(19) {
-     top: 70%;
-     left: -150px;
-     animation-delay: 17s;
-}
-
-.shooting-star:nth-child(20) {
-     top: 80%;
-     left: -150px;
-     animation-delay: 18s;
-}
-
-.shooting-star:nth-child(21) {
-     top: 90%;
-     left: -200px;
-     animation-delay: 19.5s;
-}
-
-.shooting-star:nth-child(22) {
-     top: 85%;
-     left: -50px;
-     animation-delay: 20.5s;
-}
-
-@keyframes shoot {
-     0% {
-          transform: translateX(0) translateY(0) rotate(25deg);
-          opacity: 1;
-     }
-
-     100% {
-          transform: translateX(120vw) translateY(50vh) rotate(25deg);
-          opacity: 0;
-     }
-}
-
 .stars::after {
      content: "";
      position: absolute;
@@ -596,6 +371,5 @@ onMounted(() => {
      height: 1px;
      background: white;
      box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white, 33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white, 57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white, 81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white, 3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white, 27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white, 51vw 92vh 2px white, 59vw 78vh 1px white;
-     animation: twinkle 6s infinite linear reverse;
 }
 </style>
