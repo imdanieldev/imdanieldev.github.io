@@ -210,10 +210,6 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
-window.addEventListener("resize", ()=>{
-     window.location.reload();
-});
-
 onMounted(() => {
      let smoother = ScrollSmoother.create({
           smooth: 0.1,
