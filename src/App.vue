@@ -234,16 +234,6 @@ onMounted(() => {
                snap: false,
           }
      });
-     let myname = new SplitText(".name", { type: "chars" });
-     gsap.from(myname.chars, {
-          scale: 0,
-          x: 50,
-          opacity: 0,
-          duration: 0.5,
-          ease: "power2.out",
-          stagger: 0.1,
-          delay: 0.5
-     });
      document.querySelectorAll(".godown").forEach((item) => {
           item.addEventListener("click", (event) => {
                event.preventDefault();
