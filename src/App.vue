@@ -111,14 +111,11 @@
                </div>
           </section>
           <section id="items"
-               class="my-box-shadow min-h-svh w-full overflow-hidden relative px-2 py-4 z-10 bg-blue-950/5 flex justify-start flex-col items-center">
-               <div class="stars top-0"></div>
-               <div class="stars top-1/3"></div>
-               <div class="stars top-2/3"></div>
+               class="my-box-shadow min-h-svh w-full overflow-hidden relative px-2 py-4 z-10 flex justify-start flex-col items-center">
                <h2 class="text-2xl sm:text-4xl montserrat-600 uppercase tracking-[1rem]">Plans:</h2>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div id="panels"
-                         class="flex min-h-[600svh] lg:min-h-[300svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
+                         class="flex min-h-[600svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
                          <div class="w-full grow-0 shrink-0 basis-full flex justify-end items-center panel">
                               <div
                                    class="border-gradient3 relative bg-white/5 transition-all duration-500 translate-y-0 hover:-translate-y-5 mt-5 gap-6 flex justify-center items-center flex-col w-full lg:w-[30vw] min-h-[60vh] lg:min-h-[50vh] py-5 px-3 sm:px-7">
