@@ -4,7 +4,8 @@
           <section
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
                <div class="stars top-0"></div>
-               <div class="relative text-center w-full flex justify-between items-center sm:items-start flex-col py-5 sm:py-12 px-3 sm:px-2 min-h-svh gap-5">
+               <div
+                    class="relative text-center w-full flex justify-between items-center sm:items-start flex-col py-5 sm:py-12 px-3 sm:px-2 min-h-svh gap-5">
                     <div class="flex flex-col items-center sm:items-start gap-2 sm:gap-5">
                          <div class="flex flex-col justify-center items-center sm:items-start gap-1 sm:gap-5">
                               <span class="text-2xl sm:text-3xl text-gray-300/60">Hi I'm </span>
@@ -195,8 +196,42 @@
           </section>
           <section class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
                <div class="stars top-0"></div>
-               <div>
-                    Cooming Soon...
+               <div class="min-h-svh w-full flex flex-col justify-around items-center">
+                    <div>
+                         <h3 class="text-2xl sm:text-3xl uppercase text-center">Technical Skills</h3>
+                         <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 justify-items-center mt-4">
+                              <li class="bg-[#e34c26] rounded-md px-3 py-0.5">HTML</li>
+                              <li class="bg-[#264de4] rounded-md px-3 py-0.5">CSS</li>
+                              <li class="bg-[#f0db4f] text-black rounded-md px-3 py-0.5">Javascript</li>
+                              <li class="bg-[#06B6D4] text-black rounded-md px-3 py-0.5">Tailwind CSS</li>
+                              <li class="bg-[#563d7c] rounded-md px-3 py-0.5">Bootstrap</li>
+                              <li class="bg-[#CD6799] text-black rounded-md px-3 py-0.5">Sass</li>
+                              <li class="bg-[#0078d7] rounded-md px-3 py-0.5">Less</li>
+                              <li class="bg-[#41D1FF] text-black rounded-md px-3 py-0.5">Vite</li>
+                              <li class="bg-[#41B883] text-black rounded-md px-3 py-0.5">VueJS</li>
+                              <li class="bg-[#00DC82] text-black rounded-md px-3 py-0.5">NuxtJS</li>
+                              <li class="bg-[#7BC6FF] text-black rounded-md px-3 py-0.5">VuetifyJS</li>
+                              <li class="bg-[#0ae448] text-black rounded-md px-3 py-0.5">Gsap</li>
+                              <li class="bg-[#8993be] text-black rounded-md px-3 py-0.5">PHP</li>
+                              <li class="bg-[#00749C] rounded-md px-3 py-0.5">Wordpress</li>
+                              <li class="bg-gradient-to-l from-[#DD2C00] to-[#FF9100] rounded-md px-3 py-0.5">Firebase</li>
+                              <li class="bg-[#4285F4] rounded-md px-3 py-0.5">Google Console</li>
+                              <li class="bg-[#F1502F] rounded-md px-3 py-0.5">Git</li>
+                              <li class="bg-[#042B59] rounded-md px-3 py-0.5">Dart (Basic)</li>
+                              <li class="bg-gradient-to-r from-[#306998] to-[#ffde57] text-black rounded-md px-3 py-0.5">Python (Basic)</li>
+                              <li class="bg-[#F7931E] text-black rounded-md px-3 py-0.5">Linux</li>
+                              <li class="bg-[#00a4ef] text-black rounded-md px-3 py-0.5">Windows</li>
+                         </ul>
+                    </div>
+                    <div>
+                         <h3 class="text-2xl sm:text-3xl uppercase text-center">Personal Skills</h3>
+                         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-5 justify-items-center mt-4">
+                              <li class="bg-[#f58b34] text-black rounded-md px-3 py-0.5">MIT App Inventor</li>
+                              <li class="bg-[#3ddc84] text-black rounded-md px-3 py-0.5">Custom Rom</li>
+                              <li class="bg-white text-black rounded-md px-3 py-0.5">Persian (Native)</li>
+                              <li class="bg-white text-black rounded-md px-3 py-0.5">English</li>
+                         </ul>
+                    </div>
                </div>
           </section>
      </div>
