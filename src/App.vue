@@ -335,6 +335,7 @@
                                         <li>Brief Answer to the Big Questions (Hawking)</li>
                                         <li>The Computer and the Brain (Neumann)</li>
                                         <li>The great ideas of biology (Nurse)</li>
+                                        <li>365 days without you (Akhira)</li>
                                    </ul>
                               </Transition>
                          </li>
