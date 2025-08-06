@@ -198,8 +198,10 @@
                <div class="stars top-0"></div>
                <div class="min-h-svh w-full flex flex-col justify-around items-center">
                     <div>
-                         <h3 class="text-2xl sm:text-3xl uppercase text-center">Technical Skills</h3>
-                         <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 justify-items-center mt-4">
+                         <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Technical Skills
+                         </h3>
+                         <ul
+                              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 justify-items-center mt-4">
                               <li class="bg-[#e34c26] rounded-md px-3 py-0.5">HTML</li>
                               <li class="bg-[#264de4] rounded-md px-3 py-0.5">CSS</li>
                               <li class="bg-[#f0db4f] text-black rounded-md px-3 py-0.5">Javascript</li>
@@ -210,21 +212,26 @@
                               <li class="bg-[#41D1FF] text-black rounded-md px-3 py-0.5">Vite</li>
                               <li class="bg-[#41B883] text-black rounded-md px-3 py-0.5">VueJS</li>
                               <li class="bg-[#00DC82] text-black rounded-md px-3 py-0.5">NuxtJS</li>
+                              <li class="bg-[#ffd321] text-black rounded-md px-3 py-0.5">Daisy UI</li>
                               <li class="bg-[#7BC6FF] text-black rounded-md px-3 py-0.5">VuetifyJS</li>
                               <li class="bg-[#0ae448] text-black rounded-md px-3 py-0.5">Gsap</li>
                               <li class="bg-[#8993be] text-black rounded-md px-3 py-0.5">PHP</li>
                               <li class="bg-[#00749C] rounded-md px-3 py-0.5">Wordpress</li>
-                              <li class="bg-gradient-to-l from-[#DD2C00] to-[#FF9100] rounded-md px-3 py-0.5">Firebase</li>
+                              <li class="bg-gradient-to-l from-[#DD2C00] to-[#FF9100] rounded-md px-3 py-0.5">Firebase
+                              </li>
                               <li class="bg-[#4285F4] rounded-md px-3 py-0.5">Google Console</li>
                               <li class="bg-[#F1502F] rounded-md px-3 py-0.5">Git</li>
                               <li class="bg-[#042B59] rounded-md px-3 py-0.5">Dart (Basic)</li>
-                              <li class="bg-gradient-to-r from-[#306998] to-[#ffde57] text-black rounded-md px-3 py-0.5">Python (Basic)</li>
+                              <li
+                                   class="bg-gradient-to-r from-[#306998] to-[#ffde57] text-black rounded-md px-3 py-0.5">
+                                   Python (Basic)</li>
                               <li class="bg-[#F7931E] text-black rounded-md px-3 py-0.5">Linux</li>
                               <li class="bg-[#00a4ef] text-black rounded-md px-3 py-0.5">Windows</li>
                          </ul>
                     </div>
                     <div>
-                         <h3 class="text-2xl sm:text-3xl uppercase text-center">Personal Skills</h3>
+                         <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Personal Skills
+                         </h3>
                          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-5 justify-items-center mt-4">
                               <li class="bg-[#f58b34] text-black rounded-md px-3 py-0.5">MIT App Inventor</li>
                               <li class="bg-[#3ddc84] text-black rounded-md px-3 py-0.5">Custom Rom</li>
@@ -234,10 +241,110 @@
                     </div>
                </div>
           </section>
+          <section
+               class="my-box-shadow min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
+               <div class="min-h-svh w-full flex flex-col justify-center items-center">
+                    <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Interests</h3>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 justify-items-center items-center gap-4 mt-2">
+                         <li
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
+                                   @click="itemsToggle('anime')">
+                                   My Favorite Anime
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        <path
+                                             d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                   </svg>
+                              </div>
+                              <Transition>
+                                   <ul class="mt-4" v-if="itemsShow.anime">
+                                        <li>Monster</li>
+                                        <li>Tokyo Revengers</li>
+                                        <li>Bleach</li>
+                                        <li>One piece</li>
+                                        <li>Naruto</li>
+                                        <li>Dragon Ball</li>
+                                        <li>The Beginning After The End</li>
+                                        <li>Hunter X Hunter</li>
+                                   </ul>
+                              </Transition>
+                         </li>
+                         <li
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
+                                   @click="itemsToggle('music')">
+                                   My Favorite Musics
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        <path
+                                             d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                   </svg>
+                              </div>
+                              <Transition>
+                                   <ul class="mt-4" v-if="itemsShow.music">
+                                        <li>Khafan (Ho3ein)</li>
+                                        <li>Oxygen (Alibi, Nabilety)</li>
+                                        <li>Joz To (TM Bax)</li>
+                                        <li>Bad J (Tijay)</li>
+                                        <li>Cheap (Hidden)</li>
+                                        <li>Billie Jean (Micheal Jackson)</li>
+                                        <li>Beat It (Micheal Jackson)</li>
+                                        <li>In Da Club (50 Cent)</li>
+                                        <li>Never Love Again (Eminem)</li>
+                                        <li>Sava (Godpoori)</li>
+                                   </ul>
+                              </Transition>
+                         </li>
+                         <li
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
+                                   @click="itemsToggle('game')">
+                                   My Favorite Games
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        <path
+                                             d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                   </svg>
+                              </div>
+                              <Transition>
+                                   <ul class="mt-4" v-if="itemsShow.game">
+                                        <li>Clash Royale</li>
+                                        <li>Clash of Clans</li>
+                                        <li>Call of duty mobile</li>
+                                        <li>Subway Surfers</li>
+                                        <li>Ninja Arashi (1,2)</li>
+                                        <li>Shadow fight (2,4)</li>
+                                        <li>Chess</li>
+                                   </ul>
+                              </Transition>
+                         </li>
+                                                  <li
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
+                                   @click="itemsToggle('books')">
+                                   My Favorite Books
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        <path
+                                             d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                   </svg>
+                              </div>
+                              <Transition>
+                                   <ul class="mt-4" v-if="itemsShow.books">
+                                        <li>Brief Answer to the Big Questions (Hawking)</li>
+                                        <li>The Computer and the Brain (Neumann)</li>
+                                        <li>The great ideas of biology (Nurse)</li>
+                                   </ul>
+                              </Transition>
+                         </li>
+                    </ul>
+               </div>
+          </section>
      </div>
 </template>
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollSmoother } from 'gsap/ScrollSmoother';
@@ -245,6 +352,15 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
 
+let itemsShow = ref({
+     anime: false,
+     music: false,
+     books: false,
+     game: false
+});
+const itemsToggle = (key) => {
+     itemsShow.value[key] = !itemsShow.value[key];
+}
 onMounted(() => {
      let smoother = ScrollSmoother.create({
           smooth: 0.1,
@@ -284,6 +400,17 @@ onMounted(() => {
 
 </script>
 <style scoped>
+.v-enter-active,
+.v-leave-active {
+     transition: all 1s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+     font-size: 0;
+     transform: translateY(100px);
+}
+
 .gradient-text {
      background-image: linear-gradient(to right, #00ffd5, #3aff4a);
      -webkit-background-clip: text;
@@ -305,6 +432,21 @@ onMounted(() => {
 .border-gradient3 {
      border: 6px solid;
      border-image: linear-gradient(180deg, #00ffd5, #3aff4a) 1;
+}
+
+.border-gradientb {
+     position: relative;
+}
+
+.border-gradientb::after {
+     content: '';
+     width: 100%;
+     height: 2px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background: linear-gradient(90deg, #00ffd5, #3aff4a);
+     border-radius: 999px;
 }
 
 .my-box-shadow {
