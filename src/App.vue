@@ -241,7 +241,7 @@
                     </div>
                </div>
           </section>
-          <section
+          <section id="int"
                class="my-box-shadow min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
                <div class="min-h-svh w-full flex flex-col justify-center items-center">
                     <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Interests</h3>
@@ -249,7 +249,7 @@
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('anime')">
+                                   @click="itemsToggle('anime')" id="goint">
                                    My Favorite Anime
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -273,7 +273,7 @@
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('music')">
+                                   @click="itemsToggle('music')" id="goint">
                                    My Favorite Musics
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -299,7 +299,7 @@
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('game')">
+                                   @click="itemsToggle('game')" id="goint">
                                    My Favorite Games
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -319,10 +319,10 @@
                                    </ul>
                               </Transition>
                          </li>
-                                                  <li
+                         <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('books')">
+                                   @click="itemsToggle('books')" id="goint">
                                    My Favorite Books
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -361,6 +361,11 @@ let itemsShow = ref({
 });
 const itemsToggle = (key) => {
      itemsShow.value[key] = !itemsShow.value[key];
+     for (let skey in itemsShow.value) {
+          if (skey !== key) {
+               itemsShow.value[skey] = false;
+          }
+     }
 }
 onMounted(() => {
      let smoother = ScrollSmoother.create({
@@ -397,8 +402,17 @@ onMounted(() => {
                });
           });
      });
+     document.querySelectorAll("#goint").forEach((item) => {
+          item.addEventListener("click", (event) => {
+               event.preventDefault();
+               gsap.to(window, {
+                    duration: 1,
+                    scrollTo: document.querySelector("#int"),
+                    ease: "power2.inOut"
+               });
+          });
+     });
 });
-
 </script>
 <style scoped>
 .v-enter-active,
