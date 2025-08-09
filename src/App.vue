@@ -9,7 +9,6 @@
                     <div class="flex flex-col items-center sm:items-start gap-2 sm:gap-5">
                          <div class="flex flex-col justify-center items-center sm:items-start gap-1 sm:gap-5">
                               <span class="text-2xl sm:text-3xl text-gray-300/60">Hi I'm </span>
-
                               <h1
                                    class="name gradient-text select-none cursor-text uppercase text-center text-4xl sm:text-6xl break-words montserrat-500">
                                    Danial Nasr
@@ -113,7 +112,7 @@
           </section>
           <section id="items"
                class="my-box-shadow min-h-svh w-full overflow-hidden relative px-2 py-4 z-10 flex justify-start flex-col items-center">
-               <h2 class="text-2xl sm:text-4xl montserrat-600 uppercase tracking-[1rem]">Plans:</h2>
+               <h2 class="text-2xl sm:text-4xl uppercase border-gradientb pb-2 text-center">Plans</h2>
                <div class="min-h-svh w-full lg:py-0 flex justify-center items-center">
                     <div id="panels"
                          class="flex min-h-[600svh] justify-start px-2 py-4 items-start w-full gap-10 flex-nowrap overflow-x-hidden relative">
@@ -244,86 +243,76 @@
           <section id="int"
                class="my-box-shadow min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
                <div class="min-h-svh w-full flex flex-col justify-center items-center">
-                    <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Interests</h3>
-                    <ul class="grid grid-cols-1 sm:grid-cols-2 justify-items-center items-center gap-4 mt-2">
+                    <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Questions</h3>
+                    <ul class="flex flex-wrap justify-center items-center gap-2 mt-2">
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('anime')" id="goint">
-                                   My Favorite Anime
+                                   @click="itemsToggle('two')" id="goint">
+                                   Who Am I?
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                         viewBox="0 0 16 16">
                                         <path
                                              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                                    </svg>
                               </div>
                               <Transition>
-                                   <ul class="mt-4" v-if="itemsShow.anime">
-                                        <li>Monster</li>
-                                        <li>Tokyo Revengers</li>
-                                        <li>Bleach</li>
-                                        <li>One piece</li>
-                                        <li>Naruto</li>
-                                        <li>Dragon Ball</li>
-                                        <li>The Beginning After The End</li>
-                                        <li>Hunter X Hunter</li>
+                                   <ul class="mt-4" v-if="itemsShow.two">
+                                        <li>Full Name: Danial Nasr</li>
+                                        <li>Age: {{ myage }}</li>
+                                        <li>Location: Iran ,Isfahan</li>
+                                        <li>Email: imdanielng2008@gmail.com (i don't check it)</li>
+                                        <li>Social Media: Go to the first page</li>
                                    </ul>
                               </Transition>
                          </li>
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('music')" id="goint">
-                                   My Favorite Musics
+                                   @click="itemsToggle('one')" id="goint">
+                                   Are the websites optimized?
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        viewBox="0 0 16 16">
                                         <path
                                              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                                    </svg>
                               </div>
                               <Transition>
-                                   <ul class="mt-4" v-if="itemsShow.music">
-                                        <li>Khafan (Ho3ein)</li>
-                                        <li>Oxygen (Alibi, Nabilety)</li>
-                                        <li>Joz To (TM Bax)</li>
-                                        <li>Bad J (Tijay)</li>
-                                        <li>Cheap (Hidden)</li>
-                                        <li>Billie Jean (Micheal Jackson)</li>
-                                        <li>Beat It (Micheal Jackson)</li>
-                                        <li>In Da Club (50 Cent)</li>
-                                        <li>Never Love Again (Eminem)</li>
-                                        <li>Sava (Godpoori)</li>
-                                   </ul>
+                                   <p class="mt-4" v-if="itemsShow.one">
+                                        They are completely up to date and optimized standards <br />
+                                        because they are written with technology like Tailwind CSS. <br />
+                                        But not in all plans. <br />
+                                        In the Basic plan, it is not completely optimized, <br />
+                                        but on small sites it does not have an impact.
+                                   </p>
                               </Transition>
                          </li>
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('game')" id="goint">
-                                   My Favorite Games
+                                   @click="itemsToggle('three')" id="goint">
+                                   Do we have a team?
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                        viewBox="0 0 16 16">
                                         <path
                                              d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                                    </svg>
                               </div>
                               <Transition>
-                                   <ul class="mt-4" v-if="itemsShow.game">
-                                        <li>Clash Royale</li>
-                                        <li>Clash of Clans</li>
-                                        <li>Call of duty mobile</li>
-                                        <li>Subway Surfers</li>
-                                        <li>Ninja Arashi (1,2)</li>
-                                        <li>Shadow fight (2,4)</li>
-                                        <li>Chess</li>
-                                   </ul>
+                                   <p class="mt-4" v-if="itemsShow.three">
+                                        Team members are not used in light work, <br />
+                                        but in heavier work, <br />
+                                        such as the final plan or <br />
+                                        for large sites in the standard plan, <br />
+                                        team members are used.
+                                   </p>
                               </Transition>
                          </li>
                          <li
                               class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
-                                   @click="itemsToggle('books')" id="goint">
-                                   My Favorite Books
+                                   @click="itemsToggle('four')" id="goint">
+                                   How long does it take to build a website?
                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                         <path
@@ -331,12 +320,17 @@
                                    </svg>
                               </div>
                               <Transition>
-                                   <ul class="mt-4" v-if="itemsShow.books">
-                                        <li>Brief Answer to the Big Questions (Hawking)</li>
-                                        <li>The Computer and the Brain (Neumann)</li>
-                                        <li>The great ideas of biology (Nurse)</li>
-                                        <li>365 days without you (Akhira)</li>
-                                   </ul>
+                                   <p class="mt-4" v-if="itemsShow.four">
+                                        It depends on your website. <br />
+                                        In the Basic plan, <br />
+                                        it takes about 7 days and in the Standard plan, <br />
+                                        it takes about 5 days. <br />
+                                        Depending on whether you want to use a team or not, <br />
+                                        the amount will be higher. <br />
+                                        In the Essential plan, <br />
+                                        the complete website will be delivered in about 1 month, <br />
+                                        and again, it depends on your website.
+                                   </p>
                               </Transition>
                          </li>
                     </ul>
@@ -352,12 +346,12 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother';
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { SplitText } from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin, SplitText);
-
+const myage = ref(new Date().getFullYear() - 2008);
 let itemsShow = ref({
-     anime: false,
-     music: false,
-     books: false,
-     game: false
+     one: false,
+     two: false,
+     three: false,
+     four: false
 });
 const itemsToggle = (key) => {
      itemsShow.value[key] = !itemsShow.value[key];
@@ -408,7 +402,8 @@ onMounted(() => {
                gsap.to(window, {
                     duration: 1,
                     scrollTo: document.querySelector("#int"),
-                    ease: "power2.inOut"
+                    ease: "power2.inOut",
+                    delay: 0.1
                });
           });
      });
@@ -460,7 +455,7 @@ onMounted(() => {
      position: absolute;
      bottom: 0;
      left: 0;
-     background: linear-gradient(90deg, #00ffd5, #3aff4a);
+     background: linear-gradient(85deg, #00ffd5, #3aff4a);
      border-radius: 999px;
 }
 
