@@ -5,9 +5,9 @@
                class="min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative overflow-hidden z-10">
                <div class="stars top-0"></div>
                <div
-                    class="relative text-center w-full flex justify-between items-center sm:items-start flex-col py-5 sm:py-12 px-3 sm:px-2 min-h-svh gap-5">
-                    <div class="flex flex-col items-center sm:items-start gap-2 sm:gap-5">
-                         <div class="flex flex-col justify-center items-center sm:items-start gap-1 sm:gap-5">
+                    class="relative text-center w-full flex justify-between items-center flex-col py-5 sm:py-12 px-3 sm:px-2 min-h-svh gap-5">
+                    <div class="flex flex-col items-center gap-2 sm:gap-5">
+                         <div class="flex flex-col justify-center items-center gap-1 sm:gap-5">
                               <span class="text-2xl sm:text-3xl text-gray-300/60">Hi I'm </span>
                               <h1
                                    class="name gradient-text select-none cursor-text uppercase text-center text-4xl sm:text-6xl break-words montserrat-500">
@@ -31,7 +31,7 @@
                     <div>
                          <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-10">
                               <li><a href="//t.me/D6NTR" target="_blank" rel="noopener noreferrer"
-                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-[#0088cc] hover:border-[#0088cc] justify-center">
+                                        class="flex items-center text-lg gap-1 bg-transparent border-2 rounded-lg px-2 py-1 hover:bg-[#0088cc] hover:border-[#0088cc] justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
                                              viewBox="0 0 16 16">
                                              <path
@@ -40,7 +40,7 @@
                                         Telegram
                                    </a></li>
                               <li><a href="//instagram.com/imdanieln2008" target="_blank" rel="noopener noreferrer"
-                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 from-[#833AB4] via-[#FD1D1D] to-[#FCB045] hover:bg-gradient-to-r hover:border-black justify-center">
+                                        class="flex items-center text-lg gap-1 bg-transparent border-2 rounded-lg px-2 py-1 from-[#833AB4] via-[#FD1D1D] to-[#FCB045] hover:bg-gradient-to-r hover:border-black justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
                                              viewBox="0 0 16 16">
                                              <path
@@ -49,7 +49,7 @@
                                         Instagram
                                    </a></li>
                               <li><a href="//wa.me/+989944902292" target="_blank" rel="noopener noreferrer"
-                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-[#25D366] hover:border-[#25D366] hover:text-black justify-center">
+                                        class="flex items-center text-lg gap-1 bg-transparent border-2 rounded-lg px-2 py-1 hover:bg-[#25D366] hover:border-[#25D366] hover:text-black justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
                                              viewBox="0 0 16 16">
                                              <path
@@ -58,7 +58,7 @@
                                         Whatsapp
                                    </a></li>
                               <li><a href="//x.com//imdanialdev?s=09" target="_blank" rel="noopener noreferrer"
-                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
+                                        class="flex items-center text-lg gap-1 bg-transparent border-2 rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
                                              viewBox="0 0 16 16">
                                              <path
@@ -67,7 +67,7 @@
                                         Twitter
                                    </a></li>
                               <li><a href="//github.com/imdanieldev" target="_blank" rel="noopener noreferrer"
-                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
+                                        class="flex items-center text-lg gap-1 bg-transparent border-2 rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
                                         <svg xmlns=" http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
                                              viewBox="0 0 16 16">
                                              <path
@@ -76,7 +76,7 @@
                                         Github
                                    </a></li>
                               <li><a href="//imdanieldev.github.io/blog" target="_blank"
-                                        class="flex items-center text-lg gap-1 bg-transparent border-[1px] rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
+                                        class="flex items-center text-lg gap-1 bg-transparent border-2 rounded-lg px-2 py-1 hover:bg-white hover:border-white hover:text-black justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current"
                                              viewBox="0 0 16 16">
                                              <path
@@ -200,7 +200,7 @@
                          <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Technical Skills
                          </h3>
                          <ul
-                              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 justify-items-center mt-4">
+                              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-5 mt-4 text-center">
                               <li class="bg-[#e34c26] rounded-md px-3 py-0.5">HTML</li>
                               <li class="bg-[#264de4] rounded-md px-3 py-0.5">CSS</li>
                               <li class="bg-[#f0db4f] text-black rounded-md px-3 py-0.5">Javascript</li>
@@ -231,7 +231,7 @@
                     <div>
                          <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Personal Skills
                          </h3>
-                         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-5 justify-items-center mt-4">
+                         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-5 mt-4 text-center">
                               <li class="bg-[#f58b34] text-black rounded-md px-3 py-0.5">MIT App Inventor</li>
                               <li class="bg-[#3ddc84] text-black rounded-md px-3 py-0.5">Custom Rom</li>
                               <li class="bg-white text-black rounded-md px-3 py-0.5">Persian (Native)</li>
@@ -244,9 +244,9 @@
                class="my-box-shadow min-h-svh w-full flex flex-col bg-neutral-950 justify-center items-center px-4 py-4 relative">
                <div class="min-h-svh w-full flex flex-col justify-center items-center">
                     <h3 class="text-2xl sm:text-3xl uppercase text-center border-gradientb pb-2">Questions</h3>
-                    <ul class="flex flex-wrap justify-center items-center gap-2 mt-2">
+                    <ul class="grid grid-cols-1 gap-3 mt-5">
                          <li
-                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-2 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
                                    @click="itemsToggle('two')" id="goint">
                                    Who Am I?
@@ -267,7 +267,7 @@
                               </Transition>
                          </li>
                          <li
-                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-2 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
                                    @click="itemsToggle('one')" id="goint">
                                    Are the websites optimized?
@@ -288,7 +288,7 @@
                               </Transition>
                          </li>
                          <li
-                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-2 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
                                    @click="itemsToggle('three')" id="goint">
                                    Do we have a team?
@@ -309,7 +309,7 @@
                               </Transition>
                          </li>
                          <li
-                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-1 relative overflow-hidden">
+                              class="bg-gradient-to-r rounded-md from-[#00ffd52c] to-[#3aff4a2c] px-4 py-2 relative overflow-hidden">
                               <div class="flex justify-between items-center gap-6 cursor-pointer select-none"
                                    @click="itemsToggle('four')" id="goint">
                                    How long does it take to build a website?
